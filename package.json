@@ -1,0 +1,37 @@
+{
+  "name": "ES2020-AVA",
+  "version": "1.0.0",
+  "description": "ES2020 AVA Template Library",
+  "main": "src/main.js",
+  "repository": "https://github.com/folkengine/ES2020-AVA.git",
+  "author": "ElectronicPanopticon <gaoler@electronicpanopticon.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "genversion": "genversion --es6 --semi src/version.js",
+    "lint": "node_modules/.bin/eslint",
+    "test": "ava"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/preset-env": "^7.15.0",
+    "commander": "^8.1.0",
+    "esm": "^3.2.25"
+  },
+  "devDependencies": {
+    "@ava/babel": "^2.0.0",
+    "ava": "^3.15.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.1",
+    "genversion": "^3.0.1"
+  },
+  "ava": {
+    "babel": true,
+    "require": [
+      "esm"
+    ]
+  }
+}
